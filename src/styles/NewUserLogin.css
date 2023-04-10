@@ -1,0 +1,189 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kufam&display=swap');
+
+.page-body{
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 15rem;
+}
+
+.image{
+  background-color: #CCBDFF;
+  width: 45%;
+  height: 100%;
+  margin: auto;
+}
+
+.form-container{
+  background-color: transparent;
+  width: 45%;
+  margin: auto;
+  margin-top: 2rem;
+  border: none;
+  padding: 2rem;
+}
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.75em;
+  max-width: 50rem;
+  margin-left: 0rem;
+  justify-content: left;
+}
+
+.form__checkbox-container {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  gap: 0.5em;
+}
+  
+.form__persist {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5em;
+}
+
+.form__title-row {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 0em;
+  font-family: 'Kufam', sans-serif;
+  display: flex;
+  margin-left: 8.75rem;
+}
+
+.form__label{
+  font-family: Kufam;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.form__input {
+  padding: 0.5em;
+  border-radius: 0px;
+  border-color: transparent;
+  height: 2.5rem;
+  width: 30rem;
+  font-size: larger;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+
+.form__input--text {
+  min-height: 150px;
+}
+
+.form__input--incomplete {
+  background-color: #CCBDFF;
+}
+
+.form__input--complete {
+  background-color: #40b040;
+}
+  
+.form__checkbox {
+  width: 24px;
+  height: 24px;
+}
+select{
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+  outline: none;
+  overflow-y: auto;
+}
+select::-ms-expand {
+  display: none;
+}
+.select-wrapper{
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid #777;
+  border-radius: 0.25em;
+  padding: 0.25em 0.5em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fff;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+.select-wrapper::after{
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: #777;
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}
+
+.form__row {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 5em;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+  
+.form__divider {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.25em;
+}
+.errmsg {
+  display: inline-block;
+  background-color: #FFF;
+  color: firebrick;
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+}
+
+
+.btn-group{
+  padding: auto;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: 'Kufam', sans-serif;
+  text-align: center;
+  cursor: pointer;
+  width: 12.5rem;
+  height: 2.5rem;
+  border: none;
+}
+.btn-group-sumbit{  
+  margin-left: 8.75rem;
+  color: white;
+  background-color: #9767da;
+}
+.btn-group-select{
+  background-color: #ccbdff;
+  color: black;
+}
+.btn-group:hover{
+  background-color: #acb4f1;
+}
+.help-text{
+  font-size: 1rem;
+  display: none;
+}
+.invalid{
+  display: block;
+  color: red;
+}

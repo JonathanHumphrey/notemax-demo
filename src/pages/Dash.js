@@ -4,14 +4,12 @@ import FileUpload from "./FileUpload";
 import ItemCard from "../components/ItemCard";
 
 import { useState } from "react";
-import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
-import { selectUserById } from "../features/usersApiSlice";
+
 import { useGetUsersQuery } from "../features/usersApiSlice";
 
 // data imported from static to mimic the backend
 import { dummyData } from "../static/dummyData"
-import { userData } from "../static/userData"
+
 
 const Dash = () => {
 	useGetUsersQuery(undefined, {
@@ -19,10 +17,10 @@ const Dash = () => {
 		refetchOnFocus: true,
 		refetchOnMountOrArgChange: true,
 	});
-	const userId = localStorage.getItem("userId");
 	const user = {
 		name: "test",
-		categories: ['Worksheets', "Note Taking"]
+		categories: ['Worksheets', "Note Taking"],
+		userId: 0
 	}
 
 	const [modalOpen, setModalOpen] = useState(false);

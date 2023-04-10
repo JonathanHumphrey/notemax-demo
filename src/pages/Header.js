@@ -3,7 +3,7 @@ import UserModal from "./UserModal";
 //import logo from './logo2.png';
 
 
-import { useState, useEffect } from "react";
+import { useState} from "react";
 import { useSelector } from "react-redux";
 import { useGetUsersQuery } from "../features/usersApiSlice";
 import { selectUserById } from "../features/usersApiSlice";
